@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>SMARTED ASSIGNMENT</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>TOY STORE</h1>
+    </header>
+    <div class="menu-toggle">
+        <input type="checkbox" id="menu-check">
+        <div class="menu-btn">
+            <label for="mennu-check">
+                <span >Home</span>
+                <span>Contact</span>
+                <span>Search</span>
+            </label>
+        </div>
+    </div>
+    <header1 class="my-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <a class="navbar-brand" href="#" style="font-size: medium; color: blue;">Your Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">       
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" >Naruto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Statues</a>
+                    </li>
+                </ul>
+
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                      </form>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header1>
+
+    <main class=" inline-flex gap-3 row my-5">
+        
+
+        <div class="card my-3" style="width: 25rem;">
+            <img src="./assests/NarutoToy1.jpeg" alt="" >
+            <div class="card-body " >
+                <h4  class="card-title" style="color: darkred; font-size: 25px;" >NARUTO SAGE MODE</h4>
+                <p style="font-size: 20px;" > TYPE:Naruto Sage Mode with Toads Frogs Action Figure |Material: PVC Anime Collectible Model Toy Figurine|
+                    Dimensions:This figure is 6.5 inches tall and comes with extra pairs of hands. </p>
+                <p class="price">MRP.1999</p>
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card my-3" style="width: 25rem;">
+            <img src="./assests/MinatoToy.png" alt="" >
+            <div class="card-body">
+                <h4  class="card-title" style="color: darkred; font-size: 25px;">MINATO ACTION TOY</h4>
+                <p style="font-size: 20px;">TYPE: Action Figure|Dimensions:L 9 X H 12cm|Material: Best Quality PVC|Birthday Gift for Your Friends,Daughter
+                    ,Sister,Girlfriend.Believe That They Will be Happy When Receive It.
+                </p>
+                
+                <p class="price">MRP.1450</p>
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card my-3" style="width: 25rem;" >
+            <img src="./assests/narutosmall.jpg" alt="" >
+            <div class="card-body">
+                <h4 class="card-title" style="color: darkred; font-size: 25px;">NARUTO CUTE ACTION MODEL</h4>
+                <p style="font-size: 20px;">Naruto Anime |Trunkin brand with Multicolour|PVC Material Naruto Smile|Dimensions:5L x 5W x 8H Centimeters
+                    | Room Type: Living Room, Bedroom.|The model looks realistic, Environmentally friendly         
+                </p>
+                
+                <p class="price">MRP.599</p>
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card my-3" style="width: 25rem;">
+            <img src="./assests/KakashiToy.png" alt="" >
+            <div class="card-body">
+                <h4  class="card-title" style="color: darkred; font-size: 25px;">KAKASHI ACTION TOY</h4>
+                <p style="font-size: 20px;">TYPE: Action Figure |Size: 24 cm |Material: High Quality PVC, Eco-friendly & Non-toxic.
+                    The most Popular Character With Great Quality and Craftsmanship, a must have collectors item
+                </p>
+                <p class="price">MRP.2500</p>
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3>Product Order Form</h3>
+    
+            <form action="submit_order" method="post">
+                <label for="product_name">Product Name:</label>
+                <input type="text" id="product_name" name="product_name" required>
+    
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+    
+                <label for="customer_name">Your Name:</label>
+                <input type="text" id="customer_name" name="customer_name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="PHONE NUMBER">Phone Number:
+                </label>
+                <input type="tel" name="phonenumber" pattern="{789}[0-9]{9}" required>
+                
+                <label for="shipping_address">Shipping Address:</label>
+                <textarea id="shipping_address" name="shipping_address" required></textarea>
+    
+                <input type="submit" value="Place Order">
+            </form>
+        </div>
+
+        <div class="comment-box">
+            <label for="textarea" class="form-label">Comments</label>
+            <textarea class="form-control" id="textarea" rows="3"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+
+    </main>
+    
+</body>
+</html>

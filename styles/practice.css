@@ -1,0 +1,40 @@
+header {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+}
+
+main {
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container{
+    background-color: hotpink;
+}
+
+header{
+    font-size: 25px;
+}
+
+.product {
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+.product img {
+    width: 350px;
+    border-radius: 15px;
+}
+
+.product-info {
+    max-width: 300px;
+}
+
+.price {
+    color: red; 
+    font-weight: bold;
+}

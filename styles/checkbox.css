@@ -1,0 +1,39 @@
+div{
+    background-color: brown;
+    color: aqua;
+    font-size: 25px;
+}
+legend{
+    font-size: 50px;
+    color: darkgoldenrod;
+}
+
+body{
+    margin: 20px;
+    display: block;
+    /*background: rgb(221,42,17);
+    background: linear-gradient(90deg, rgba(221,42,17,1) 0%, rgba(51,52,51,1) 50%);*/
+    background: rgb(227,236,237);
+    background: linear-gradient(90deg, rgba(227,236,237,0.47876027852547265) 0%, rgba(51,52,52,0.9129339479932598) 50%);
+    color: white;
+    background-size: 400% 400%;
+    animation: bodyBackgroundAnimation 5s ease-in-out infinite;
+}
+
+@keyframes bodyBackgroundAnimation{
+    /*0-100*/
+    /*this trigger the animation starts*/
+    0%{
+        background-position: 0 50%;
+    }
+    /*this trigger the animation mid way*/
+    50%{
+        background-position: 100% 50%;
+    }
+    /*this trigger the animation ends*/
+    100%{
+        background-position: 0 50%;
+    }
+        
+    
+}

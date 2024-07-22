@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+img {
+    width: 350px;
+    border-radius: 15px;
+}
+p{
+    width: 350px;
+}
+.price{
+    color: red;
+    font-size: 25px;
+}
+h4{
+    color: aqua;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+button{
+    background-color: green;
+    color: whitesmoke;
+    align-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card{
+    width: 25rem;
+}
+button:hover {
+    background-color: #45a049;
+}
+.container {
+    width: 60%;
+    margin: 50px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:ghostwhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h3 {
+    text-align: center;
+    color: #333;
+
+}
+form {
+    display: grid;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.comment-box{
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-toggle span{
+    height: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.menu-toggle input:checked ~ .mennu-btn span:nth-child(2){
+    opacity:0;
+}
+.menu-toggle input:checked ~ .mennu-btn span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle input:checked ~ .mennu-btn span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
